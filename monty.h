@@ -41,5 +41,6 @@ int _atoi(char *str);
 void push_op(stack_t **stack, unsigned int line_number);
 void pall_op(stack_t **stack, unsigned int line_number);
 int get_builtin(char *token, stack_t **stack, unsigned int line_number);
+void pint_op(stack_t **stack, unsigned int line_number);
 
 #endif
