@@ -29,6 +29,7 @@ int get_builtin(char *token, stack_t **stack, unsigned int line_number)
 		{ "pop", pop_op },
 		{ "swap", swap_op },
 		{ "add", add_op },
+		{ "nop", nop_op },
 		{ NULL, NULL }
 	};
 	int i, flag = 0;
