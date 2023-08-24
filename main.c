@@ -28,7 +28,6 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
 		return (EXIT_FAILURE);
 	}
-
 	while (fgets(buffer, sizeof(buffer), file))
 	{
 		line_number++;
@@ -40,10 +39,8 @@ int main(int argc, char *argv[])
 			get_builtin(opcode, &stack, line_number);
 		}
 	}
-
 	free(line);
 	fclose(file);
-
 	while (stack)
 	{
 		stack_t *temp = stack;
@@ -51,6 +48,5 @@ int main(int argc, char *argv[])
 		stack = stack->next;
 		free(temp);
 	}
-
 	return (EXIT_SUCCESS);
 }
