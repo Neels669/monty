@@ -43,6 +43,10 @@ Any error message must be printed on stderr
 
 **TASKS**
 
+* monty.h
+
+This is the header file with the prototypes of all functions. Including the data structures that have been provided.
+
 
 
 
