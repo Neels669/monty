@@ -31,6 +31,7 @@ int get_builtin(char *token, stack_t **stack, unsigned int line_number)
 		{ "add", add_op },
 		{ "nop", nop_op },
 		{ "sub", sub_op },
+		{ "div", div_op },
 		{ NULL, NULL }
 	};
 	int i, flag = 0;
