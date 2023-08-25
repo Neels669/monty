@@ -33,6 +33,7 @@ int get_builtin(char *token, stack_t **stack, unsigned int line_number)
 		{ "sub", sub_op },
 		{ "div", div_op },
 		{ "mul", mul_op },
+		{ "mod", mod_op },
 		{ NULL, NULL }
 	};
 	int i, flag = 0;
